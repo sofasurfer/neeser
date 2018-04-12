@@ -14097,10 +14097,12 @@ html.lt-ie-10 .range > .cell-lg-12 {
 
 .rd-navbar-fullwidth .rd-navbar-nav > li.opened > a,
 .rd-navbar-fullwidth .rd-navbar-nav > li.active > a,
+.rd-navbar-fullwidth .rd-navbar-nav > li.is-active > a,
 .rd-navbar-fullwidth .rd-navbar-nav > li.focus > a,
 .rd-navbar-fullwidth .rd-navbar-nav > li > a:hover,
 .rd-navbar-static .rd-navbar-nav > li.opened > a,
 .rd-navbar-static .rd-navbar-nav > li.active > a,
+.rd-navbar-static .rd-navbar-nav > li.is-active > a,
 .rd-navbar-static .rd-navbar-nav > li.focus > a,
 .rd-navbar-static .rd-navbar-nav > li > a:hover {
   color: #00bd9d;
@@ -15869,6 +15871,7 @@ html.rd-navbar-fixed-linked .page {
   border-bottom-color: silver;
 }
 
+.rd-navbar-sidebar .rd-navbar-nav > li.is-active > a,
 .rd-navbar-sidebar .rd-navbar-nav > li > a:hover {
   color: #00bd9d;
 }

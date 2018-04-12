@@ -9,8 +9,8 @@
       <?= $page->text()->kirbytext() ?>
     </div>    
     <!-- Isotope-->
-    <div class="isotope" data-isotope-layout="masonry" data-isotope-group="gallery" data-lightgallery="group">
-      <div class="row">
+    <div class="isotope" data-isotope-layout="masonry" data-isotope-group="gallery*" data-lightgallery="group*">
+      <div class="row" id="lightGallery">
         <?php
         $counter = 0;
         ?>
@@ -30,8 +30,8 @@
                 $cssa = 'thumb-ruby';
               }
             ?>
-            <div class="<?= $css ?> isotope-item" data-filter="Category <?= $category ?>">
-              <a class="<?= $cssa ?>" href="<?= $image->url() ?>" data-lightgallery="group-item">
+            <div data-src="<?= $image->url() ?>" class="<?= $css ?> isotope-item" data-filter="Category <?= $category ?>">
+              <a class="<?= $cssa ?>" href="<?= $image->url() ?>" data-lightgallery="group-item*">
                 <img class="thumb-ruby__image" src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>" width="270" height="375"/>
                 <div class="thumb-ruby__caption"> 
                 </div>

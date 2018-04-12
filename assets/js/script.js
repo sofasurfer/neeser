@@ -62,6 +62,12 @@ var userAgent = navigator.userAgent.toLowerCase(),
 $document.ready(function () {
   var isNoviBuilder = window.xMode;
 
+
+  $(document).ready(function() {
+    $("#lightGallery").lightGallery(); 
+  });
+
+  
   /**
    * getSwiperHeight
    * @description  calculate the height of swiper slider basing on data attr
