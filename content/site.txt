@@ -1,12 +1,12 @@
-Title: Kirby Starterkit
+Title: Rolf Neeser Reportagen
 
 ----
 
-Author: Bastian Allgeier GmbH
+Author: Rolf Neeser
 
 ----
 
-Description: This is Kirby's Starterkit.
+Description: 
 
 ----
 
