@@ -20481,6 +20481,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   opacity: 0;
   transition: opacity 0.15s ease 0s;
   direction: ltr;
+  background-color: black;
 }
 
 .lg-outer * {

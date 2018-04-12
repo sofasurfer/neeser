@@ -30,7 +30,7 @@ if(isset($limit)) $projects = $projects->limit($limit);
       <?php endif ?>
       <div class="thumb-ruby__caption"> 
         <p class="thumb-ruby__title heading-3"><?= $project->title()->html() ?></p>
-        <p class="thumb-ruby__text"><?= $project->published()->html() ?></p>
+        <!--p class="thumb-ruby__text"><?= $project->published()->html() ?></p-->
       </div>
       </a>
     </div>
