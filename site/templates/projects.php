@@ -1,19 +1,14 @@
 <?php snippet('header') ?>
+<?php snippet('breadcrumbs') ?>
 
-  <main class="main" role="main">
-
-    <header class="wrap">
-      <h1><?= $page->title()->html() ?></h1>
-      <div class="intro text">
-        <?= $page->text()->kirbytext() ?>
-      </div>
-      <hr />
-    </header>
-      
-    <div class="wrap wide">    
-      <?php snippet('showcase') ?>
+<!-- Gallery-->
+<section class="section section-md bg-white oh text-center">
+  <div class="shell">
+    <h2><?= $page->subtitle()->kirbytext() ?></h2>
+    <div class="intro text">
+      <?= $page->text()->kirbytext() ?>
     </div>
-
-  </main>
-
+    <?php snippet('showcase') ?>
+  </div>
+</section>
 <?php snippet('footer') ?>

@@ -9,13 +9,26 @@ fields:
   title:
     label: Title
     type:  text
-    width: 3/4
+    width: 2/4
+
+  published:
+    label: Published
+    type:  text
+    width: 1/4
 
   year:
     label: Year
     type:  text
     width: 1/4
 
+  coverimage:
+    label: Coverimage
+    type:  image
+
+  subtitle:
+    label: Subtitle
+    type:  text
+    
   text:
     label: Text
     type:  textarea

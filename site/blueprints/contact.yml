@@ -14,9 +14,25 @@ fields:
   intro:
     label: Intro
     type: textarea
-    
+
+  mobile:
+    label: Mobile
+    type: title
+
+  address:
+    label: Address
+    type: title
+
+  email:
+    label: E-Mail
+    type: title
+
+  map:
+    label: MapLink
+    type: title
+
   contactoptions:
-    label: Contact Options
+    label: Social media
     type: structure
     style: table
     fields:
@@ -25,17 +41,7 @@ fields:
         type: text
       icon:
         label: Icon
-        type: image
-      text:
-        label: Text
         type: text
       url:
         label: URL
         type: text
-      linktext:
-        label: Link Text
-        type: text
-  
-  text:
-    label: Text
-    type: textarea

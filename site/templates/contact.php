@@ -1,41 +1,54 @@
 <?php snippet('header') ?>
+<?php snippet('breadcrumbs') ?>
 
-  <main class="main" role="main">
-    
-    <header class="wrap">
-      <h1><?= $page->title()->html() ?></h1>      
-      <div class="intro text">
-        <?= $page->intro()->kirbytext() ?>
-      </div>    
-      <hr />      
-    </header>
-    
-    <div class="wrap wide">
-      <h2>Get in Touch</h2>
+<!-- Get in Touch -->
+<section class="section section-md bg-white text-center"> 
+  <div class="shell">
+    <div class="range range-md-center">
+      <div class="cell-md-11 cell-xl-10">
       
-      <ul class="contact-options">
-        <?php foreach($page->contactoptions()->toStructure() as $item): ?>
-          <?php $icon = $page->image($item->icon()); ?>
-          <li class="contact-item column">
-            <div class="contact-item-content">
-              <img src="<?= $icon->url() ?>" width="<?= $icon->width() ?>" alt="<?= $item->title()->html() ?> icon" class="contact-item-icon" />
-              <h3 class="contact-item-title"><?= $item->title()->html() ?></h3>
-              <p class="contact-item-text">
-                <?= $item->text()->html() ?>
-              </p>
+        <div class="layout-columns"> 
+          <div class="layout-columns__aside">
+            <div class="layout-columns__aside-item">
+              <p class="heading-5">Mobile</p>
+              <div class="divider-modern"></div>
+              <div class="unit unit-horizontal unit-spacing-xxs">
+                <div class="unit__left"><span class="icon icon-md icon-primary material-icons-local_phone"></span></div>
+                <div class="unit__body"><a href="callto:#"><?= $page->mobile()->html() ?></a></div>
+              </div>
             </div>
-            <p class="contact-item-action">
-              <a href="<?= $item->url()->html() ?>" class="contact-action btn"><?= $item->linktext()->html() ?></a>
-            </p>
-          </li>
-        <?php endforeach ?>
-      </ul>
+            <div class="layout-columns__aside-item">
+              <p class="heading-5">Address</p>
+              <div class="divider-modern"></div>
+              <div class="unit unit-horizontal unit-spacing-xxs">
+                <div class="unit__left"><span class="icon icon-md icon-primary material-icons-location_on"></span></div>
+                <div class="unit__body"><a href="#"><?= $page->address()->html() ?></a></div>
+              </div>
+            </div>
+            <div class="layout-columns__aside-item">
+              <p class="heading-5">E-Mail Address</p>
+              <div class="divider-modern"></div>
+              <div class="unit unit-horizontal unit-spacing-xxs">
+                <div class="unit__left"><span class="icon icon-md icon-primary material-icons-mail"></span></div>
+                <div class="unit__body"><a href="mailto:<?= $page->email()->html() ?>"><?= $page->email()->html() ?></a></div>
+              </div>
+            </div>
+            <div class="layout-columns__aside-item">
+              <p class="heading-5">Socials</p>
+              <div class="divider-modern"></div>
+              <ul class="list-icons list-inline-xs">
+              <?php foreach($page->contactoptions()->toStructure() as $item): ?>
+                <li><a class="icon icon-sm fa <?= $item->icon()->html() ?> icon-style-social" title="<?= $item->title()->html() ?>" href="<?= $item->url()->html() ?>"></a></li>
+              <?php endforeach ?>
+           </ul>
+            </div>
+          </div>
+          <div class="layout-columns__main">
+           <iframe style="width:100%;height:420px;border:0" class="map" src="<?= $page->map()->html() ?>"></iframe>
+          </div>
+        </div>
+      </div>
     </div>
-      
-    <div class="contact-twitter text wrap cf">
-      <?= $page->text()->kirbytext() ?>
-    </div>
-    
-  </main>
-
+  </div>
+</section>
 <?php snippet('footer') ?>

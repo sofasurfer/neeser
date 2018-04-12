@@ -11,8 +11,15 @@ options:
   url: false  
 
 fields:
+  seo:
+    type: seo
+    
   title:
     label: Title
+    type:  text
+
+  subtitle:
+    label: Intro
     type:  text
 
   text:
