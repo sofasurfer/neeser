@@ -20,7 +20,7 @@
         <?php if($document = $page->files()->findBy('extension', 'pdf')): ?>
           <p>
             <?php foreach($page->documents()->filterBy('extension', 'pdf') as $pdf): ?>
-              <a class="btn btn-primary" href="<?= $page->url() ?>?pdf=<?= $pdf->url() ?>"><?= $pdf->filename() ?></a>
+              <a class="btn btn-primary" href="<?= $page->url() ?>?pdf=<?= $pdf->url() ?>"><?= ($pdf->alttext()->empty()) ? $pdf->filename() : $pdf->alttext(); ?></a>
             <?php endforeach ?>
           </p>
         <?php endif ?>

@@ -62,11 +62,6 @@ var userAgent = navigator.userAgent.toLowerCase(),
 $document.ready(function () {
   var isNoviBuilder = window.xMode;
 
-
-  $(document).ready(function() {
-    $("#lightGallery").lightGallery(); 
-  });
-
   
   /**
    * getSwiperHeight
@@ -1076,7 +1071,11 @@ $document.ready(function () {
   function initLightGallery(itemsToInit, addClass){
     if (plugins.lightGallery.length && !isNoviBuilder) {
       $(itemsToInit).lightGallery({
-        thumbnail: true,
+        thumbnail: false,
+        download: false,
+        zoom: false,
+        share: false,
+        fullScreen: true,
         selector: "[data-lightgallery='group-item']",
         addClass: addClass
       });

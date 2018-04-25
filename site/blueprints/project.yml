@@ -2,6 +2,13 @@ title: Project
 
 files:
   sortable: true
+  fields:
+    alttext:
+      label: Title
+      type: text
+    caption:
+      label: Caption
+      type: textarea
 
 pages: false
 

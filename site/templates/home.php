@@ -62,11 +62,7 @@
             </div>
             <div class="cell-xs-6 cell-md-6 cell-xl-12">
               <!-- Box award-->
-              <article class="box-award"><img class="box-award__image" src="assets/images/about/logo-swpa.png" alt=""/>
-                <h3 class="box-award__title">Swiss Press Award/Photo</h3>
-                <div class="box-award__divider"></div>
-                <time class="box-award__time" datetime="2014">2017</time>
-              </article>
+              <?php snippet('swisspress') ?>
             </div>
           </div>
         </div>

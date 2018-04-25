@@ -1,4 +1,6 @@
 <?php
+header("Location: https://www.rolfneeser.ch/");
+die();
 
 define('DS', DIRECTORY_SEPARATOR);
 

@@ -1,4 +1,6 @@
 <?php
+header("Location: https://www.rolfneeser.ch/panel");
+die();
 
 use Kirby\Panel;
 

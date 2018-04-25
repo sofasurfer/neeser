@@ -9,7 +9,6 @@
   <?php echo seo('description'); ?>  
   <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
   <?= css('assets/css/bootstrap.css') ?>
-  <?= css('assets/css/lightGallery.css') ?>
   <?= css('assets/css/style.css') ?>  
 </head>
 <body>
